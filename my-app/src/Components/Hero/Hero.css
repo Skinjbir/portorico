@@ -1,0 +1,22 @@
+/* Left Container */
+.leftContainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.leftContainer div {
+  line-height: 0.9;
+}
+
+.icons {
+  color: black;
+  cursor: pointer;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}

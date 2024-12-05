@@ -1,0 +1,52 @@
+
+/* Right Container */
+.rightContainer {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #000;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    margin-top: 50px;
+  }
+  
+  .rightContainer.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .rightContainer h1 {
+    font-weight: 500;
+    color: black;
+  }
+  
+  /* Work Item */
+  .WorkItem {
+    text-align: justify;
+    margin: 0;
+    color: #777;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+  
+  .WorkItem ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  .WorkItem ul li {
+    margin: 0 0 0 5px;
+  }
+  
+  .WorkItem:hover {
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+  }
+  
+  h3 {
+    font-weight: 500;
+    color: #000;
+  }
