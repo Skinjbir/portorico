@@ -1,0 +1,39 @@
+.testimonials-section h1{
+  text-align: left;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonial-card {
+  text-align: justify;
+  margin: 0;
+  color: #777;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.feedback {
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.author {
+  font-size: 0.9rem;
+  color: black;
+}
+
+.testimonial-card h3 {
+  font-weight: 500;
+  color: #000;
+}

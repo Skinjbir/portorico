@@ -1,21 +1,26 @@
 import React, { useState } from 'react';
 import Header from './Components/Hero/Hero';
-import Work from './Components/Hero/Work/Work';
 import Announce from './Components/Announce/Announce';
+import Screen from './Components/Hero/Screen';
 
 const App = () => {
-  const [showWork, setShowWork] = useState(false); // State to control Work visibility
+  const [activeSection, setActiveSection] = useState(''); // 'work' or 'testimonials'
 
-  const toggleWork = () => {
-    setShowWork(prevShowWork => !prevShowWork); // Toggles the visibility state
+  const toggleSection = (section) => {
+    setActiveSection(prev => (prev === section ? '' : section));
   };
 
   return (
-    <div className='bigContainer'>
-      <Announce />
-      <Header toggleWork={toggleWork} /> {/* Pass toggle function to Header */}
-      <Work showWork={showWork} /> {/* Pass visibility state to Work */}
-      
+    <div>
+
+      <div className='bigContainer'>
+        <Announce />
+        <Header 
+          toggleWork={() => toggleSection('work')} 
+          toggleTest={() => toggleSection('testimonials')} 
+        />
+        <Screen activeSection={activeSection} /> {/* Pass state down */}
+      </div>
     </div>
   );
 };

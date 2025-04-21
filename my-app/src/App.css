@@ -9,3 +9,12 @@
   flex-direction: row; /* default to row layout */
   background-color: cadetblue;
 }
+
+
+.heroContainer {
+  background-color: cadetblue;
+}
+
+.bigContainer {
+  background-color: aquamarine;
+}

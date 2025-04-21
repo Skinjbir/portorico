@@ -1,25 +1,5 @@
 
-/* Right Container */
-.rightContainer {
-    flex: 3;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: #000;
-    opacity: 1;
-    transition: opacity 0.5s ease;
-    margin-top: 50px;
-  }
-  
-  .rightContainer.hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  .rightContainer h1 {
-    font-weight: 500;
-    color: black;
-  }
+
   
   /* Work Item */
   .WorkItem {
