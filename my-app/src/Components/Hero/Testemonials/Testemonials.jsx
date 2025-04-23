@@ -6,7 +6,7 @@ const Testemonials = ({ showTest }) => {
 
   const testimonials = [
     {
-      name: "John Doe",
+      name: "Fortune Vierra",
       title: "Project Manager at HPS",
       feedback: "Mohammed-Reda was a pleasure to work with. His ability to take initiative and drive results was impressive.",
     },
