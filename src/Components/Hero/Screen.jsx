@@ -1,6 +1,7 @@
 import React from 'react';
 import Work from '../Hero/Work/Work';
 import Testemonials from '../Hero/Testemonials/Testemonials';
+import BlogPosts from './Blogs/BlogPosts'; // Correct import
 import './Screen.css';
 import logo from '../../assets/vector.svg';
 
@@ -18,6 +19,13 @@ function Screen({ activeSection }) {
           <Testemonials showTest />
         </div>
       )}
+
+      {activeSection === 'blogs' && (
+        <div className="sectionFade">
+          <BlogPosts showPosts />
+        </div>
+      )}
+
       
       {!activeSection && (
         <div className="emptyState">

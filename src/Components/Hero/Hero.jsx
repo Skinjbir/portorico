@@ -5,9 +5,7 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import { TiSocialGithub } from "react-icons/ti";
 import { TiSocialAtCircular } from "react-icons/ti";
 import { MdOutlineAlternateEmail } from "react-icons/md";
-
-
-function Header({ toggleWork, toggleTest }) {
+function Header({ toggleWork, toggleTest, toggleBlogs }) {
   return (
     <div className='leftContainer'>
       <div>
@@ -25,7 +23,12 @@ function Header({ toggleWork, toggleTest }) {
         </p>
 
         <p>Get my <span>Resume</span></p>
-        <p><span id='touch'>Get in touch</span></p>
+        
+        <p>
+          <span id='touch' onClick={toggleBlogs} style={{ cursor: 'pointer' }}>
+            Get in touch
+          </span>
+        </p>
 
         <div className="icons">
           <TiSocialLinkedin className='icon'/>
@@ -36,5 +39,6 @@ function Header({ toggleWork, toggleTest }) {
     </div>
   );
 }
+
 
 export default Header;

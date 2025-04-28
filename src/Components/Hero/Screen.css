@@ -1,13 +1,16 @@
-.rightContainer {
+
+
+  .rightContainer {
     flex: 3;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    color: #000;
-    opacity: 1;
+    justify-content: center;
+    overflow: hidden;             /* prevent the page scrollbar here */
+    margin-top: 50px;             /* you already had this */
     transition: opacity 0.5s ease;
-    margin-top: 50px;
+    overflow: hidden;
   }
+  
   
   .rightContainer.hidden {
     opacity: 0;
@@ -28,6 +31,7 @@
     opacity: 1;
     color: #000;
     animation: fadeInSection 0.6s ease both;
+    margin-left: 150px;
 
   }
   
@@ -55,8 +59,11 @@
     }
   }
   
-
   .sectionFade {
+    flex: 1;            /* fill the .rightContainer vertically */
+    overflow-y: auto;   /* ← allow vertical scrolling */
+    overflow-x: hidden; /* optional: prevent horizontal scroll */
+    padding: 1rem;
     animation: fadeInSection 0.6s ease both;
   }
   
@@ -71,3 +78,10 @@
     }
   }
   
+  .sectionFade {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.sectionFade::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}

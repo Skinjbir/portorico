@@ -4,23 +4,21 @@ import Announce from './Components/Announce/Announce';
 import Screen from './Components/Hero/Screen';
 
 const App = () => {
-  const [activeSection, setActiveSection] = useState(''); // 'work' or 'testimonials'
+  const [activeSection, setActiveSection] = useState('');
 
   const toggleSection = (section) => {
     setActiveSection(prev => (prev === section ? '' : section));
   };
 
   return (
-    <div>
-
-      <div className='bigContainer'>
-        <Announce />
-        <Header 
-          toggleWork={() => toggleSection('work')} 
-          toggleTest={() => toggleSection('testimonials')} 
-        />
-        <Screen activeSection={activeSection} /> {/* Pass state down */}
-      </div>
+    <div className='bigContainer'>
+      <Announce />
+      <Header 
+        toggleWork={() => toggleSection('work')} 
+        toggleTest={() => toggleSection('testimonials')} 
+        toggleBlogs={() => toggleSection('blogs')} // ✅ make sure this is here
+      />
+      <Screen activeSection={activeSection} />
     </div>
   );
 };

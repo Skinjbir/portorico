@@ -1,0 +1,122 @@
+.blog-feed {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .blog-feed h1 {
+    font-weight: 500;
+    color: rgb(255, 0, 0);
+    text-align: left;
+    
+  }
+  
+  .posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow: hidden;
+  }
+  
+  .post-card {
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.5 ease;
+  }
+
+  .post-card:hover {
+    scale: 1.01;
+    transition: all 0.5 ease;
+      }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .post-author {
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+  
+  .post-date {
+    font-size: 0.8em;
+    color: #777;
+  }
+  
+  .post-content {
+    margin-bottom: 15px;
+  }
+  
+  .post-content p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #000;
+    
+  }
+  
+  .post-image-container {
+    margin-top: 15px;
+  }
+  
+  .post-image {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .post-stats {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: 15px 0;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .post-actions button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+    transition: all 0.2s;
+  }
+  
+  .post-actions button:hover {
+    background: #f5f5f5;
+  }
+  
+  .post-actions button.liked {
+    color: #e74c3c;
+  }
+  
+  .post-actions button.bookmarked {
+    color: #f39c12;
+  }
