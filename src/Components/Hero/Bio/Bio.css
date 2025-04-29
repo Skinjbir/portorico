@@ -1,0 +1,166 @@
+/* Main bio container */
+.bio {
+    text-align: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  
+  /* Main title */
+  .bio h1 {
+    margin-bottom: 2rem;
+    color: #000; /* Black for main title */
+  }
+  
+  /* FLEX container for image + text */
+  .bio-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  /* Funny image styling */
+  .funnyImage {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border: 3px solid #fff;
+  }
+  
+  .funnyImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Right side text */
+  .bio-text {
+    max-width: 600px;
+    text-align: left;
+    flex: 1;
+    min-width: 300px;
+    color: #777; /* Gray for regular text */
+  }
+  
+  /* Section styling */
+  .bio-text section {
+    margin-bottom: 2rem;
+  }
+  
+  /* Section titles */
+  .bio-text section h2 {
+    color: #000; /* Black for headings */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .bio-text section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #000000;
+  }
+  
+  /* Lists styling */
+  .funFacts, .certList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .funFacts li, .certList li {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem;
+    color: #777; /* Gray for list items */
+  }
+  
+  /* Keep emojis and strong text black */
+  .funFacts li span, 
+  .certList li span, 
+  strong {
+    color: #000;
+  }
+  
+  .funFacts li::before, .certList li::before {
+    content: '•';
+    color: #000; /* Black bullets */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Certifications Section */
+  .certifications h2 {
+    font-size: 1.6rem;
+    color: #000; /* Black for heading */
+  }
+  
+  .certifications p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #777; /* Gray for text */
+  }
+  
+  /* Coming soon text */
+  .comingSoon {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #777; /* Gray */
+  }
+  
+  /* Power Stats Section */
+  .stats p {
+    font-size: 1.1rem;
+    margin: 0.8rem 0;
+    color: #777; /* Gray */
+  }
+  
+  .stats strong {
+    color: #000; /* Black for numbers/strong text */
+  }
+  
+  /* Funny Quote */
+  .quote {
+    font-style: italic;
+    color: #777; /* Gray */
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    border-left: 3px solid #000; /* Black accent */
+    padding-left: 1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .bio-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    
+    .bio-text {
+      text-align: center;
+    }
+    
+    .bio-text section h2::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .funFacts, .certList {
+      text-align: left;
+      display: inline-block;
+    }
+  }

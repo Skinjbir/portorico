@@ -16,8 +16,11 @@ const App = () => {
       <Header 
         toggleWork={() => toggleSection('work')} 
         toggleTest={() => toggleSection('testimonials')} 
-        toggleBlogs={() => toggleSection('blogs')} // ✅ make sure this is here
-      />
+        toggleBlogs={() => toggleSection('blogs')} 
+        toggleBio={() => toggleSection('bio')} 
+        toggleBooking={() => toggleSection('booking')}
+        />
+
       <Screen activeSection={activeSection} />
     </div>
   );

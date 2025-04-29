@@ -5,11 +5,12 @@
   justify-content: center;
   flex-direction: column;
   margin: 0;
+
 }
 
 
 .leftContainer div {
-  line-height: 0.9;
+  line-height: 1.5;
 }
 
 .icons {
@@ -20,4 +21,75 @@
 .icon {
   width: 25px;
   height: 25px;
+}
+
+.highlightLink {
+  cursor: pointer;
+  position: relative;
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.highlightLink::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.4em;
+  background: #ffff66; /* yellow like a highlighter */
+  opacity: 0.5;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.highlightLink:hover::before {
+  transform: scaleX(1);
+}
+
+
+
+/* ------------- RESPONSIVE ------------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .leftContainer {
+    padding: 10px;
+    align-items: flex-start;
+    background-color: #ffff66;
+  }
+
+  .icons {
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .leftContainer {
+    padding: 5px;
+    align-items: flex-start;
+  }
+
+  .leftContainer div {
+    line-height: 1.4;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .highlightLink {
+    font-size: 0.95em;
+  }
 }

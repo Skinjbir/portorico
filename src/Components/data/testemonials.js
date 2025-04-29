@@ -12,11 +12,6 @@ const testimonials = [
       feedback: "His skills in DevOps and cloud migration are top-notch. He delivered a scalable solution ahead of deadline.",
     },
     {
-      name: "Emily T.",
-      title: "Freelance Client",
-      feedback: "Efficient, professional, and always available to solve issues quickly. Highly recommend!",
-    },
-    {
       name: "Carlos M.",
       title: "Freelance Client",
       feedback: "Efficient, professional, and always available to solve issues quickly. Highly recommend!",

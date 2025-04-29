@@ -1,19 +1,18 @@
 // src/data/workItems.js
 
 const workItems = [
-    {
-      title: "Fraud Detection System Development & Deployment - Internship at HPS",
-      description: "Built and deployed a fraud detection system using autoencoders focused on identifying anomalies indicative of fraudulent activity. Responsibilities included data preprocessing, model training and tuning, and deploying the solution to production, achieving high accuracy and real-time detection capabilities.",
-    },
-    {
-      title: "Automated Web Scraping with Azure Timer-Triggered Functions - Freelance Project",
-      description: "Developed a serverless web scraping solution using Azure Functions with timer triggers to periodically extract product data from e-commerce sites. Designed the system to handle large data volumes and automatically store results in Azure Blob Storage, optimizing it for reliability and scalability.",
-    },
-    {
-      title: "Scientific Research Platform Migration to Cloud - Freelance Project",
-      description: "Migrating an existing scientific research platform to Microsoft Azure cloud environments. The project involves optimizing operational costs, enhancing system performance, and ensuring high availability, data integrity, and security compliance. Additionally, implementing scalable solutions to support future growth and facilitating seamless integration with existing data and research workflows.",
-    }
-  ];
-  
-  export default workItems;
-  
+  {
+    title: "Fraud Detection System with MLOps - Internship at HPS",
+    description: "Designed and deployed an unsupervised fraud detection model using autoencoders. Built a real-time prediction API, deployed on Minikube and MinIO, and implemented an automatic retraining pipeline to monitor data drift and reduce false positives."
+  },
+  {
+    title: "Serverless Booking Management API - Freelance Project",
+    description: "Built a serverless API with Azure Functions integrated with SendGrid for automated notifications. Automated infrastructure using Terraform, secured APIs with Azure API Management, and set up multi-environment CI/CD pipelines using Azure DevOps."
+  },
+  {
+    title: "Hybrid Cloud Compliance Audit Engine (ISO/GDPR) - End of Semester Project",
+    description: "Developed an audit engine for static (Terraform, JSON) and dynamic (Azure SDK) analysis of cloud resources. Rebuilt backend in Node.js, created a ReactJS dashboard, and integrated CI/CD for continuous compliance validation in a DevSecOps model."
+  }
+];
+
+export default workItems;

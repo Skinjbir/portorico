@@ -4,6 +4,9 @@ import Testemonials from '../Hero/Testemonials/Testemonials';
 import BlogPosts from './Blogs/BlogPosts'; // Correct import
 import './Screen.css';
 import logo from '../../assets/vector.svg';
+import Bio from './Bio/Bio';
+import Booking from './Booking/Booking';
+
 
 function Screen({ activeSection }) {
   return (
@@ -23,6 +26,18 @@ function Screen({ activeSection }) {
       {activeSection === 'blogs' && (
         <div className="sectionFade">
           <BlogPosts showPosts />
+        </div>
+      )}
+
+        {activeSection === 'bio' && (
+        <div className="sectionFade">
+          <Bio />
+        </div>
+      )}
+
+      {activeSection === 'booking' && (
+        <div className="sectionFade">
+          <Booking />
         </div>
       )}
 
