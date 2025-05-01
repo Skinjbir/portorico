@@ -4,7 +4,6 @@ import funnyImage from '../../../assets/funny.jpeg';
 
 function Bio() {
   return (
-    <div className="bio">
       <div className="bio-content">
         <img src={funnyImage} alt="Funny Reda" className="funnyImage" />
 
@@ -50,7 +49,6 @@ function Bio() {
 
         </div>
       </div>
-    </div>
   );
 }
 

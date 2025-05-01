@@ -1,7 +1,5 @@
 .blog-feed {
-    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
     overflow: hidden;
   }
   
@@ -23,9 +21,9 @@
     background-color: rgb(248, 248, 248);
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     cursor: pointer;
     transition: all 0.5 ease;
+    padding: 10px;
   }
 
   .post-card:hover {

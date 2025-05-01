@@ -22,18 +22,22 @@
     text-align: left;
   }
   
+.emptyState {
+  width: 90%;
+  animation: float 6s ease-in-out infinite;
+  opacity: 1;
+  color: #000;
+  animation: fadeInSection 0.6s ease both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.emptyState .logo {
+  width: 100%;
+}
   
-  .logo {
-    width: 500px;
-    animation: float 6s ease-in-out infinite;
-    opacity: 1;
-    color: #000;
-    animation: fadeInSection 0.6s ease both;
-    margin-left: 150px;
 
-  }
-  
 
   
   /* More expressive float animation */

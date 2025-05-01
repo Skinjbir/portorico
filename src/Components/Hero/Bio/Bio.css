@@ -2,27 +2,23 @@
 .bio {
     text-align: center;
     padding: 2rem;
-    max-width: 1200px;
     margin: 0 auto;
+    cursor: pointer;
+    border: 5px solid red;  
+    cursor: pointer;
+}
+
+  .bio-content {
+    flex-wrap: wrap;
+    height: 500px;
     cursor: pointer;
   }
   
-  /* Main title */
   .bio h1 {
     margin-bottom: 2rem;
-    color: #000; /* Black for main title */
+    color: #000; 
   }
-  
-  /* FLEX container for image + text */
-  .bio-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-  }
-  
-  /* Funny image styling */
+
   .funnyImage {
     width: 250px;
     height: 250px;
@@ -38,7 +34,6 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   }
   
-  /* Right side text */
   .bio-text {
     max-width: 600px;
     text-align: left;

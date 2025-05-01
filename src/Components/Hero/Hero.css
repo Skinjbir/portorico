@@ -52,44 +52,4 @@
 
 
 
-/* ------------- RESPONSIVE ------------- */
 
-/* Tablet */
-@media (max-width: 768px) {
-  .leftContainer {
-    padding: 10px;
-    align-items: flex-start;
-    background-color: #ffff66;
-  }
-
-  .icons {
-    gap: 10px;
-    margin-top: 15px;
-  }
-
-  .icon {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .leftContainer {
-    padding: 5px;
-    align-items: flex-start;
-  }
-
-  .leftContainer div {
-    line-height: 1.4;
-  }
-
-  .icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .highlightLink {
-    font-size: 0.95em;
-  }
-}
