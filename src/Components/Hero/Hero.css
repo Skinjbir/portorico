@@ -1,13 +1,20 @@
 /* Left Container */
 .leftContainer {
-  flex: 2;
+  flex: 4;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 0;
+  -webkit-transition: flex ease 1s;
+  -moz-transition: flex ease 1s;
+  -o-transition: flex ease 1s;
+  transition: flex ease 1s;
 
 }
 
+.leftContainer.expanded {
+  flex: 1;
+}
 
 .leftContainer div {
   line-height: 1.5;

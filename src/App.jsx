@@ -50,7 +50,9 @@ const App = () => {
         toggleBlogs={() => toggleSection('blogs')} 
         toggleBio={() => toggleSection('bio')} 
         toggleBooking={() => toggleSection('booking')}
-        />
+        activeSection={activeSection}
+      />
+
 
       <Screen activeSection={activeSection} />
     </div>
