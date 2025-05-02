@@ -3,6 +3,18 @@ import './Hero.css';
 import { TiSocialLinkedin, TiSocialGithub } from "react-icons/ti";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
+/**
+ * Header component that displays an introduction, links, and social icons.
+ * 
+ * @param {Object} props - The props object.
+ * @param {Function} props.toggleWork - Function to handle the "Explore my work" link click.
+ * @param {Function} props.toggleTest - Function to handle the "Check the testimonials" link click.
+ * @param {Function} props.toggleBlogs - Function to handle the "Read my blog and latest posts" link click.
+ * @param {Function} props.toggleBio - Function to handle the "Mohammed-Reda TARMIDI" link click.
+ * @param {Function} props.toggleBooking - Function to handle the "Let's connect!" link click.
+ * 
+ * @returns {JSX.Element} The rendered Header component.
+ */
 function Header({ toggleWork, toggleTest, toggleBlogs, toggleBio, toggleBooking }) {
   return (
     <div className='leftContainer'>
@@ -33,13 +45,16 @@ function Header({ toggleWork, toggleTest, toggleBlogs, toggleBio, toggleBooking 
         </p>
 
         <p>
-          Want to know more about my experience?
+          Want to know more about my experience? 
+          
           <a 
               href="https://drive.google.com/file/d/14mfBVmayFD5I_I4MCV7NEBiYxQoW-UFD/view?usp=drive_link" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="highlightLink"
-            >View my resume.</a>
+            > 
+             View my resume.
+          </a>
           
         </p>
 

@@ -38,6 +38,9 @@
 }
   
 
+span a {
+  text-decoration: none;
+}
 
   
   /* More expressive float animation */

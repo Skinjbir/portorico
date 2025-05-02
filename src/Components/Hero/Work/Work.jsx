@@ -2,6 +2,14 @@ import React from 'react';
 import './Work.css';
 import workItems from "../../data/workItems"; 
 
+/**
+ * The Work component renders a list of work items inside a container.
+ * It displays a title and iterates over the `workItems` array to render
+ * individual `WorkItem` components.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Work component.
+ */
 function Work() {
   return (
     <div className="rightContainer">
