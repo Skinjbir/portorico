@@ -34,7 +34,13 @@ function Header({ toggleWork, toggleTest, toggleBlogs, toggleBio, toggleBooking 
 
         <p>
           Want to know more about my experience?
-          <span onClick={toggleBlogs} className="highlightLink"> View my resume</span>.
+          <a 
+              href="https://drive.google.com/file/d/14mfBVmayFD5I_I4MCV7NEBiYxQoW-UFD/view?usp=drive_link" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="highlightLink"
+            >View my resume.</a>
+          
         </p>
 
         <p>
